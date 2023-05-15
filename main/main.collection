@@ -1,0 +1,83 @@
+name: "main"
+instances {
+  id: "ladder_and_hole"
+  prototype: "/assets/ladderAndHole/ladder_and_hole.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "light_reciever"
+    properties {
+      id: "ambient"
+      value: "0.749, 0.929, 0.78, 1.0"
+      type: PROPERTY_TYPE_VECTOR4
+    }
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "sun"
+  prototype: "/definitely-lit/light sources/sun/sun.go"
+  position {
+    x: 0.0
+    y: 8.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.74764484
+    y: -0.25133532
+    z: -0.18334241
+    w: 0.58672243
+  }
+  component_properties {
+    id: "sun"
+    properties {
+      id: "intensity"
+      value: "1.5"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "color"
+      value: "1.0, 0.71, 0.0, 1.0"
+      type: PROPERTY_TYPE_VECTOR4
+    }
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "camera"
+  prototype: "/rendercam/camera.go"
+  position {
+    x: 7.0
+    y: 14.0
+    z: 22.0
+  }
+  rotation {
+    x: -0.13177446
+    y: 0.0
+    z: 0.0
+    w: 0.9912797
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+scale_along_z: 0
