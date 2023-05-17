@@ -35,6 +35,10 @@ vec3 light_dir_calculation(vec3 light_color, vec4 light_dir, vec3 normal);
 
 void main()
 {
+    vec4 tex = vec4(texture(tex0, var_texcoord));
+    if(tex.w == 0)
+        discard;
+
     vec3 result;
 
     result = light_dir_calculation(light_dir_color.rgb, var_light_dir, var_normal);
